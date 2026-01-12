@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zarvin – Digital Forensics Portfolio</title>
+  <title>Zarvin Heruwin | Digital Forensics & Data Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     * {
@@ -12,68 +12,61 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f1f3f5;
-      color: #111;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #f6f7f9;
+      color: #222;
+      padding: 40px;
     }
 
     .container {
-      max-width: 960px;
-      margin: 80px auto;
-      padding: 48px;
+      max-width: 1000px;
+      margin: auto;
       background: #ffffff;
-      border-radius: 28px;
+      border-radius: 22px;
+      padding: 56px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+
+    h1 {
+      font-size: 44px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-top: 70px;
+      margin-bottom: 28px;
+    }
+
+    p {
+      line-height: 1.7;
+      max-width: 820px;
     }
 
     /* ===== HERO ===== */
-    .header {
+    .hero {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 48px;
-      background: linear-gradient(135deg, #f4f6f8, #eef1f4);
-      padding: 56px;
-      border-radius: 28px;
+      background: linear-gradient(135deg, #f1f3f6, #ffffff);
+      padding: 48px;
+      border-radius: 24px;
     }
 
-    .intro h1 {
-      font-size: 48px;
-      margin: 0;
-      font-weight: 700;
-    }
-
-    .intro p {
-      margin-top: 18px;
-      font-size: 18px;
-      line-height: 1.7;
-      color: #333;
-      max-width: 520px;
-    }
-
-    .profile-pic {
-      width: 210px;
-      height: 210px;
+    .hero img {
+      width: 190px;
+      height: 190px;
       border-radius: 50%;
       object-fit: cover;
       border: 6px solid white;
-      box-shadow: 0 14px 35px rgba(0,0,0,0.18);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
     }
 
-    section {
-      margin-top: 90px;
-    }
-
-    h2 {
-      font-size: 24px;
-      margin-bottom: 28px;
-    }
-
-    /* ===== ABOUT ===== */
-    #about p {
-      font-size: 16px;
-      line-height: 1.8;
-      margin-bottom: 16px;
-      max-width: 780px;
+    .hero p {
+      font-size: 18px;
+      margin-top: 16px;
+      color: #333;
     }
 
     /* ===== SKILLS ===== */
@@ -81,68 +74,108 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      max-width: 850px;
+      max-width: 860px;
     }
 
-    .skills span {
+    .skill {
       background: #f1f3f5;
+      color: #222;
       padding: 8px 14px;
       border-radius: 999px;
       font-size: 14px;
       font-weight: 500;
-      color: #222;
       white-space: nowrap;
     }
 
-    .skills span:hover {
+    .skill:hover {
       background: #e9ecef;
     }
 
-    /* ===== EXPERIENCE ===== */
-    .experience {
-      background: #fafafa;
-      padding: 36px;
-      border-radius: 20px;
-    }
-
-    .job {
+    /* ===== EDUCATION ===== */
+    .education {
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 28px;
-      gap: 20px;
+      align-items: center;
+      gap: 24px;
+      background: #f9fafb;
+      padding: 28px;
+      border-radius: 18px;
+      max-width: 820px;
     }
 
-    .job:last-child {
-      margin-bottom: 0;
+    .education img {
+      width: 72px;
+      height: 72px;
+      object-fit: cover;
+      border-radius: 12px;
     }
 
-    .job-title {
+    .education-title {
       font-weight: 600;
       font-size: 16px;
     }
 
+    .education-org a {
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .education-desc {
+      font-size: 14px;
+      color: #444;
+      margin-top: 6px;
+      max-width: 600px;
+    }
+
+    /* ===== EXPERIENCE ===== */
+    .experience {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 28px;
+    }
+
+    .job {
+      background: #f9fafb;
+      border-radius: 18px;
+      padding: 28px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .job-title {
+      font-weight: 600;
+      font-size: 17px;
+    }
+
     .job-org {
       font-size: 14px;
-      color: #555;
+      color: #666;
       margin-top: 4px;
     }
 
     .job-desc {
       font-size: 14px;
+      margin-top: 10px;
       color: #444;
-      margin-top: 8px;
-      max-width: 600px;
+      max-width: 620px;
       line-height: 1.6;
     }
 
     .job-year {
       font-size: 14px;
-      color: #666;
+      color: #777;
       white-space: nowrap;
     }
 
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
     @media (max-width: 768px) {
-      .header {
+      .hero {
         flex-direction: column-reverse;
         text-align: center;
       }
@@ -154,102 +187,151 @@
   <div class="container">
 
     <!-- HERO -->
-    <div class="header">
-      <div class="intro">
+    <section class="hero">
+      <div>
         <h1>Hi, I'm Zarvin 👋</h1>
         <p>
           Digital Forensics & Data Analyst with a strong interest in
           investigation-driven analysis and cybersecurity advisory.
         </p>
       </div>
-
-      <img src="assets/123.jpeg" alt="Profile Photo" class="profile-pic">
-    </div>
+      <img src="assets/123.jpeg" alt="Zarvin Heruwin">
+    </section>
 
     <!-- ABOUT -->
     <section id="about">
       <h2>About</h2>
       <p>
-        Final-year Computer Engineering undergraduate with a strong interest in digital forensics and
+        Final-year undergraduate with a strong interest in digital forensics and
         investigation-driven data analysis. Experienced in working with structured
-        datasets to identify patterns, irregularities, and support analytical use
-        cases related to risk, fraud, and investigations through applied projects
-        and internship experience.
+        datasets through academic projects and applied work, focusing on identifying
+        patterns and supporting analytical use cases related to risk and investigations.
+        Motivated to continue learning in forensic, cybersecurity advisory, and
+        professional services environments that value analytical thinking, integrity,
+        and clear communication.
       </p>
     </section>
 
     <!-- CORE SKILLS -->
-    <section>
+    <section id="skills">
       <h2>Core Skills</h2>
       <div class="skills">
-        <span>Digital Forensics</span>
-        <span>Investigation Support</span>
-        <span>Fraud & Risk Analysis</span>
-        <span>Revenue Assurance Analysis</span>
-        <span>Anomaly Detection</span>
-        <span>Log & Transaction Analysis</span>
-        <span>Data Validation</span>
-        <span>Pattern & Behaviour Analysis</span>
+        <span class="skill">Digital Forensics</span>
+        <span class="skill">Investigation Support</span>
+        <span class="skill">Fraud & Risk Analysis</span>
+        <span class="skill">Data Analysis</span>
+        <span class="skill">Anomaly Detection</span>
+        <span class="skill">Log & Transaction Analysis</span>
+        <span class="skill">Evidence Documentation</span>
+      </div>
+
+      <h2>Technical & Supporting Skills</h2>
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Lua</span>
+        <span class="skill">UI/UX Design</span>
+        <span class="skill">Figma</span>
+        <span class="skill">Data Querying</span>
       </div>
     </section>
 
-    <!-- TECH SKILLS -->
-    <section>
-      <h2>Technical & Supporting Skills</h2>
-      <div class="skills">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Data Querying</span>
-        <span>Structured Data Analysis</span>
-        <span>UI/UX Design</span>
-        <span>Figma</span>
-        <span>Lua</span>
-        <span>Documentation & Reporting</span>
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="education">
+        <img src="assets/telkom.png" alt="Telkom University">
+        <div>
+          <div class="education-title">
+            Bachelor of Computer Engineering (Final-Year Student)
+          </div>
+          <div class="education-org">
+            <a href="https://telkomuniversity.ac.id/" target="_blank">
+              Telkom University
+            </a>
+          </div>
+          <div class="education-desc">
+            Relevant focus includes data analysis, system design, and applied technical
+            projects related to investigative and analytical use cases.
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-<section>
-  <h2>Professional Experience</h2>
-  <div class="experience">
+    <section id="experience">
+      <h2>Professional Experience</h2>
 
-    <div class="job">
-      <div>
-        <div class="job-title">Data Forensic Intern</div>
-        <div class="job-org">Telkom Indonesia</div>
-        <div class="job-desc">
-          Supported forensic and revenue assurance–related analysis by examining
-          structured transactional and log-based datasets. Assisted investigation
-          use cases through data validation, anomaly identification, and clear
-          documentation of findings.
+      <div class="experience">
+
+        <div class="job">
+          <div>
+            <div class="job-title">Data Forensic Intern</div>
+            <div class="job-org">Telkom Indonesia</div>
+            <div class="job-desc">
+              Supported forensic and revenue assurance–related analysis by examining
+              structured transactional and log-based datasets. Assisted investigation
+              use cases through data validation, anomaly identification, and clear
+              documentation of findings.
+            </div>
+          </div>
+          <div class="job-year">2024 – 2025</div>
         </div>
-      </div>
-      <div class="job-year">June 2025 – August 2025</div>
-    </div>
 
-    <div class="job">
-      <div>
-        <div class="job-title">Data Analyst Intern</div>
-        <div class="job-org">Telkom Indonesia</div>
-        <div class="job-desc">
-          Assisted data analysis activities on large-scale datasets, focusing on
-          data querying, pattern identification, and supporting analytical insights
-          related to operational and risk-focused use cases.
+        <div class="job">
+          <div>
+            <div class="job-title">Data Analyst Intern</div>
+            <div class="job-org">Telkom Indonesia</div>
+            <div class="job-desc">
+              Assisted analytical work on large-scale datasets by performing data
+              querying, identifying patterns, and supporting insight generation for
+              operational and risk-related use cases.
+            </div>
+          </div>
+          <div class="job-year">2024</div>
         </div>
-      </div>
-      <div class="job-year">June 2025 – August 2025</div>
-    </div>
 
-    <div class="job">
-      <div>
-        <div class="job-title">Roblox Developer – Game Development</div>
-        <div class="job-org">Independent / Project-Based</div>
-        <div class="job-desc">
-          Developed and tested Lua-based game systems, implementing gameplay logic,
-          validating script behavior, and ensuring system stability through structured
-          testing and iteration.
+        <div class="job">
+          <div>
+            <div class="job-title">Roblox Developer</div>
+            <div class="job-org">Game Development (Project-Based)</div>
+            <div class="job-desc">
+              Developed and tested Lua-based game systems, validating gameplay logic,
+              scripting behavior, and system stability through structured testing and
+              iteration.
+            </div>
+          </div>
+          <div class="job-year">2022 – 2024</div>
         </div>
+
       </div>
-      <div class="job-year">2024 January - Desember 2024
+    </section>
 
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>
+        <strong>Loan Risk Analytics</strong><br>
+        Forensic-oriented data analysis project focused on identifying anomalous
+        borrower behavior and potential fraud indicators.<br>
+        <a href="https://github.com/ZarvinKucing/LoanRiskAnalytics" target="_blank">
+          View on GitHub →
+        </a>
+      </p>
+    </section>
 
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        🔗 LinkedIn:
+        <a href="https://www.linkedin.com/in/zarvin-heruwin/" target="_blank">
+          linkedin.com/in/zarvin-heruwin
+        </a>
+      </p>
+    </section>
+
+  </div>
+</body>
+</html>
