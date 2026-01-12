@@ -1,63 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Zarvin | Digital Forensics</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #ffffff;
       color: #111;
       margin: 0;
-      padding: 0;
     }
 
     .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 10px;
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 24px;
     }
 
+    /* HEADER */
     .header {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 30px;
+      gap: 40px;
     }
 
-    .header img {
-      width: 140px;
-      border-radius: 50%;
-    }
-
-    h1 {
+    .intro h1 {
+      font-size: 40px;
       margin: 0;
     }
 
-    .headline {
-      color: #555;
-      margin-top: 6px;
+    .intro p {
+      font-size: 18px;
+      color: #444;
+      max-width: 600px;
+      margin-top: 12px;
     }
 
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* SECTIONS */
     section {
-      margin-top: 40px;
+      margin-top: 60px;
     }
 
     h2 {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 6px;
+      font-size: 22px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 8px;
+      margin-bottom: 24px;
     }
 
+    /* EXPERIENCE */
+    .experience {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      row-gap: 20px;
+    }
+
+    .role {
+      font-weight: 600;
+    }
+
+    .company {
+      color: #444;
+      font-size: 14px;
+    }
+
+    .date {
+      color: #777;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    /* PROJECT */
     .project {
-      margin-top: 15px;
+      margin-bottom: 20px;
     }
 
-    a {
-      color: #0070f3;
+    .project a {
+      color: #0a66c2;
       text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* CONTACT */
+    .contact a {
+      color: #0a66c2;
+      text-decoration: none;
+      margin-right: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -67,34 +112,48 @@
 
     <!-- HEADER -->
     <div class="header">
-      <img src="assets/foto.jpg" alt="Profile Photo">
-      <div>
-        <h1>Zarvin Heruwin</h1>
-        <div class="headline">
-          Digital Forensics & Fraud Analysis | Investigation-Focused
-        </div>
+      <div class="intro">
+        <h1>Hi, I'm Zarvin 👋</h1>
+        <p>
+          Digital Forensics & Fraud Analysis professional with a strong interest
+          in investigation-driven analysis and cybersecurity advisory.
+        </p>
       </div>
+
+      <img src="assets/123.jpg" alt="Profile Photo" class="profile-pic" />
     </div>
 
     <!-- ABOUT -->
     <section>
       <h2>About</h2>
       <p>
-        Final-year student with hands-on experience in digital forensics,
-        fraud detection, and investigation-driven data analysis.
-        Interested in forensic investigations and cybersecurity advisory
-        within a professional services environment.
+        I have hands-on experience in digital forensics, fraud detection, and
+        investigation-driven data analysis, particularly in identifying
+        irregular patterns and suspicious activities from structured datasets.
+        I have supported investigation and assurance-related use cases through
+        structured analysis and clear documentation of findings, with a strong
+        interest in digital forensic investigations within a professional
+        services environment.
       </p>
     </section>
 
     <!-- EXPERIENCE -->
     <section>
-      <h2>Experience</h2>
-      <p><strong>Data Forensic Intern — Telkom Indonesia</strong></p>
-      <ul>
-        <li>Analysed transactional and system-related data to identify irregular patterns</li>
-        <li>Supported investigation processes through structured analysis and documentation</li>
-      </ul>
+      <h2>Professional Experience</h2>
+
+      <div class="experience">
+        <div>
+          <div class="role">Data Forensic Intern</div>
+          <div class="company">Telkom Indonesia</div>
+        </div>
+        <div class="date">2024 – 2025</div>
+
+        <div>
+          <div class="role">Research Assistant</div>
+          <div class="company">SEA Laboratory, Telkom University</div>
+        </div>
+        <div class="date">2023</div>
+      </div>
     </section>
 
     <!-- PROJECTS -->
@@ -102,21 +161,23 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <strong>Loan Risk Analytics</strong><br>
-        Forensic data analysis project focused on identifying anomalous borrower behaviour.<br>
-        <a href="https://github.com/ZarvinKucing/LoanRiskAnalytics" target="_blank">View GitHub</a>
+        <strong>Loan Risk Analytics</strong><br />
+        Forensic-oriented data analysis project focused on identifying anomalous
+        borrower behaviour and potential fraud indicators.<br />
+        <a href="https://github.com/ZarvinKucing/LoanRiskAnalytics" target="_blank">
+          View on GitHub
+        </a>
       </div>
-
     </section>
 
     <!-- CONTACT -->
     <section>
       <h2>Contact</h2>
-      <p>
-        Email: zarvinheruwin123@gmail.com<br>
-        LinkedIn: <a href="#">linkedin.com/in/zarvinheruwin</a><br>
-        GitHub: <a href="#">github.com/ZarvinKucing</a>
-      </p>
+      <div class="contact">
+        <a href="mailto:zarvin@email.com">Email</a>
+        <a href="https://linkedin.com/in/zarvin" target="_blank">LinkedIn</a>
+        <a href="https://github.com/ZarvinKucing" target="_blank">GitHub</a>
+      </div>
     </section>
 
   </div>
