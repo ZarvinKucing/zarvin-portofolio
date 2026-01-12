@@ -2,106 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Zarvin | Digital Forensics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zarvin – Digital Forensics Portfolio</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      background: #ffffff;
-      color: #111;
       margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f1f3f5;
+      color: #111;
     }
 
     .container {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 24px;
+      max-width: 960px;
+      margin: 80px auto;
+      padding: 48px;
+      background: #ffffff;
+      border-radius: 28px;
     }
 
-    /* HEADER */
+    /* ===== HEADER / HERO ===== */
     .header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 40px;
+      justify-content: space-between;
+      gap: 48px;
+
+      background: linear-gradient(135deg, #f4f6f8, #eef1f4);
+      padding: 56px;
+      border-radius: 28px;
     }
 
     .intro h1 {
-      font-size: 40px;
+      font-size: 48px;
       margin: 0;
+      font-weight: 700;
     }
 
     .intro p {
+      margin-top: 18px;
       font-size: 18px;
-      color: #444;
-      max-width: 600px;
-      margin-top: 12px;
+      line-height: 1.7;
+      color: #333;
+      max-width: 520px;
     }
 
     .profile-pic {
-      width: 140px;
-      height: 140px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
+
+      border: 6px solid white;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
     }
 
-    /* SECTIONS */
+    /* ===== SECTIONS ===== */
     section {
-      margin-top: 60px;
+      margin-top: 90px;
     }
 
     h2 {
-      font-size: 22px;
-      border-bottom: 1px solid #e5e5e5;
-      padding-bottom: 8px;
-      margin-bottom: 24px;
+      font-size: 24px;
+      margin-bottom: 28px;
     }
 
-    /* EXPERIENCE */
+    #about p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 18px;
+      color: #222;
+      max-width: 780px;
+    }
+
+    /* ===== EXPERIENCE ===== */
     .experience {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      row-gap: 20px;
+      background: #fafafa;
+      padding: 36px;
+      border-radius: 20px;
     }
 
-    .role {
+    .job {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 28px;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-title {
       font-weight: 600;
+      font-size: 16px;
     }
 
-    .company {
-      color: #444;
+    .job-org {
       font-size: 14px;
+      color: #555;
+      margin-top: 4px;
     }
 
-    .date {
-      color: #777;
+    .job-year {
       font-size: 14px;
+      color: #666;
       white-space: nowrap;
     }
 
-    /* PROJECT */
+    /* ===== PROJECTS ===== */
     .project {
-      margin-bottom: 20px;
+      background: #f9fafb;
+      padding: 28px;
+      border-radius: 18px;
+      max-width: 780px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .project p {
+      margin: 0;
+      line-height: 1.6;
+      color: #333;
     }
 
     .project a {
-      color: #0a66c2;
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: 500;
+      color: #0057b7;
     }
 
-    /* CONTACT */
-    .contact a {
-      color: #0a66c2;
-      text-decoration: none;
-      margin-right: 16px;
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      margin-top: 100px;
+      font-size: 14px;
+      color: #666;
     }
 
     @media (max-width: 768px) {
       .header {
         flex-direction: column-reverse;
-        align-items: flex-start;
+        text-align: center;
+      }
+
+      .intro p {
+        max-width: 100%;
       }
     }
   </style>
@@ -110,7 +168,7 @@
 <body>
   <div class="container">
 
-    <!-- HEADER -->
+    <!-- HERO -->
     <div class="header">
       <div class="intro">
         <h1>Hi, I'm Zarvin 👋</h1>
@@ -124,16 +182,33 @@
     </div>
 
     <!-- ABOUT -->
-    <section>
+    <section id="about">
       <h2>About</h2>
+
       <p>
         I have hands-on experience in digital forensics, fraud detection, and
-        investigation-driven data analysis, particularly in identifying
-        irregular patterns and suspicious activities from structured datasets.
-        I have supported investigation and assurance-related use cases through
-        structured analysis and clear documentation of findings, with a strong
-        interest in digital forensic investigations within a professional
-        services environment.
+        investigation-driven data analysis, with a focus on identifying irregular
+        patterns, anomalies, and suspicious activities from structured datasets.
+        My work involves supporting investigation and assurance-related use cases
+        through structured analytical approaches, validation of findings, and
+        clear documentation suitable for professional and regulatory environments.
+      </p>
+
+      <p>
+        Through academic projects and applied forensic case simulations, I have
+        developed a strong analytical mindset in translating raw data into
+        investigation-relevant insights, supporting fraud risk assessment, and
+        contributing to evidence-based decision-making. I am particularly
+        interested in forensic investigations within professional services,
+        where analytical rigor, business context, and integrity are equally
+        critical.
+      </p>
+
+      <p>
+        I am motivated to grow within cybersecurity advisory and forensic
+        practices, continuously strengthening my understanding of investigative
+        methodologies, risk assessment, and ethical standards in complex
+        organisational environments.
       </p>
     </section>
 
@@ -142,17 +217,21 @@
       <h2>Professional Experience</h2>
 
       <div class="experience">
-        <div>
-          <div class="role">Data Forensic Intern</div>
-          <div class="company">Telkom Indonesia</div>
+        <div class="job">
+          <div>
+            <div class="job-title">Data Forensic Intern</div>
+            <div class="job-org">Telkom Indonesia</div>
+          </div>
+          <div class="job-year">2024 – 2025</div>
         </div>
-        <div class="date">2024 – 2025</div>
 
-        <div>
-          <div class="role">Research Assistant</div>
-          <div class="company">SEA Laboratory, Telkom University</div>
+        <div class="job">
+          <div>
+            <div class="job-title">Research Assistant</div>
+            <div class="job-org">SEA Laboratory, Telkom University</div>
+          </div>
+          <div class="job-year">2023</div>
         </div>
-        <div class="date">2023</div>
       </div>
     </section>
 
@@ -161,24 +240,22 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <strong>Loan Risk Analytics</strong><br />
-        Forensic-oriented data analysis project focused on identifying anomalous
-        borrower behaviour and potential fraud indicators.<br />
+        <h3>Loan Risk Analytics</h3>
+        <p>
+          Forensic-oriented data analysis project focused on identifying
+          anomalous borrower behaviour and potential fraud indicators
+          within structured financial datasets.
+        </p>
         <a href="https://github.com/ZarvinKucing/LoanRiskAnalytics" target="_blank">
           View on GitHub
         </a>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section>
-      <h2>Contact</h2>
-      <div class="contact">
-        <a href="mailto:zarvin@email.com">Email</a>
-        <a href="https://linkedin.com/in/zarvin" target="_blank">LinkedIn</a>
-        <a href="https://github.com/ZarvinKucing" target="_blank">GitHub</a>
-      </div>
-    </section>
+    <!-- FOOTER -->
+    <footer>
+      © 2026 Zarvin — Digital Forensics Portfolio
+    </footer>
 
   </div>
 </body>
