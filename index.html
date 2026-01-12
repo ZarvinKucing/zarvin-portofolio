@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Zarvin Heruwin | Digital Forensics & Data Analysis</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     * {
@@ -22,7 +22,7 @@
       max-width: 1000px;
       margin: auto;
       background: #ffffff;
-      border-radius: 22px;
+      border-radius: 24px;
       padding: 56px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.06);
     }
@@ -35,15 +35,16 @@
     h2 {
       font-size: 26px;
       margin-top: 70px;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
 
     p {
       line-height: 1.7;
       max-width: 820px;
+      margin-bottom: 18px;
     }
 
-    /* ===== HERO ===== */
+    /* ================= HERO ================= */
     .hero {
       display: flex;
       justify-content: space-between;
@@ -51,18 +52,29 @@
       gap: 48px;
       background: linear-gradient(135deg, #f1f3f6, #ffffff);
       padding: 48px;
-      border-radius: 24px;
+      border-radius: 26px;
     }
 
-     .hero img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: contain;
-    background: #fff;
-    padding: 6px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
-  }
+    .photo-wrapper {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: #ffffff;
+      padding: 8px;
+      box-shadow: 0 14px 32px rgba(0,0,0,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .photo-wrapper img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
 
     .hero p {
       font-size: 18px;
@@ -70,7 +82,7 @@
       color: #333;
     }
 
-    /* ===== SKILLS ===== */
+    /* ================= SKILLS ================= */
     .skills {
       display: flex;
       flex-wrap: wrap;
@@ -88,11 +100,7 @@
       white-space: nowrap;
     }
 
-    .skill:hover {
-      background: #e9ecef;
-    }
-
-    /* ===== EDUCATION ===== */
+    /* ================= EDUCATION ================= */
     .education {
       display: flex;
       align-items: center;
@@ -106,7 +114,7 @@
     .education img {
       width: 72px;
       height: 72px;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 12px;
     }
 
@@ -128,7 +136,7 @@
       max-width: 600px;
     }
 
-    /* ===== EXPERIENCE ===== */
+    /* ================= EXPERIENCE ================= */
     .experience {
       display: flex;
       flex-direction: column;
@@ -196,39 +204,43 @@
           investigation-driven analysis and cybersecurity advisory.
         </p>
       </div>
-      <img src="assets/123.jpeg" alt="Zarvin Heruwin">
+
+      <div class="photo-wrapper">
+        <img src="assets/123.jpeg" alt="Zarvin Heruwin" />
+      </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about">
       <h2>About</h2>
-     <p>
-  Final-year Computer Engineering undergraduate with experience in data analysis and
-  investigation-driven work across academic projects and applied internships. I have
-  been involved in analysing structured datasets to identify patterns, irregularities,
-  and support use cases related to risk assessment, revenue assurance, and investigative
-  analysis.
-</p>
 
-<p>
-  My background combines technical problem-solving with an interest in understanding
-  how data supports decision-making in professional and organisational contexts. In
-  addition to data-focused work, I have experience in system development and logic-based
-  implementation through technical projects, including scripting and system design in
-  game development environments.
-</p>
+      <p>
+        Final-year Computer Engineering undergraduate with experience in data analysis
+        and investigation-driven work across academic projects and applied internships.
+        I have been involved in analysing structured datasets to identify patterns,
+        irregularities, and support use cases related to risk assessment, revenue
+        assurance, and investigative analysis.
+      </p>
 
-<p>
-  I am currently a final-year student with a flexible academic schedule and availability
-  for full-time internship or entry-level roles. I am particularly interested in
-  opportunities within digital forensics, data analysis, and cybersecurity advisory,
-  where analytical rigour, integrity, and clear communication are essential. Based in
-  Indonesia, I am open to on-site, hybrid, or remote opportunities.
-</p>
+      <p>
+        My background combines technical problem-solving with an interest in
+        understanding how data supports decision-making in professional and
+        organisational contexts. In addition to data-focused work, I have experience
+        in system development and logic-based implementation through technical projects,
+        including scripting and system design in game development environments.
+      </p>
 
+      <p>
+        I am currently a final-year student with a flexible academic schedule and
+        availability for full-time internship or entry-level roles. I am particularly
+        interested in opportunities within digital forensics, data analysis, and
+        cybersecurity advisory, where analytical rigour, integrity, and clear
+        communication are essential. Based in Indonesia, I am open to on-site, hybrid,
+        or remote opportunities.
+      </p>
     </section>
 
-    <!-- CORE SKILLS -->
+    <!-- SKILLS -->
     <section id="skills">
       <h2>Core Skills</h2>
       <div class="skills">
@@ -257,7 +269,7 @@
       <h2>Education</h2>
 
       <div class="education">
-        <img src="assets/telkom.png" alt="Telkom University">
+        <img src="assets/telkom.png" alt="Telkom University" />
         <div>
           <div class="education-title">
             Bachelor of Computer Engineering (Final-Year Student)
@@ -280,7 +292,6 @@
       <h2>Professional Experience</h2>
 
       <div class="experience">
-
         <div class="job">
           <div>
             <div class="job-title">Data Forensic Intern</div>
@@ -314,13 +325,12 @@
             <div class="job-org">Game Development (Project-Based)</div>
             <div class="job-desc">
               Developed and tested Lua-based game systems, validating gameplay logic,
-              scripting behavior, and system stability through structured testing and
+              scripting behaviour, and system stability through structured testing and
               iteration.
             </div>
           </div>
           <div class="job-year">2022 – 2024</div>
         </div>
-
       </div>
     </section>
 
@@ -328,9 +338,9 @@
     <section id="projects">
       <h2>Projects</h2>
       <p>
-        <strong>Loan Risk Analytics</strong><br>
+        <strong>Loan Risk Analytics</strong><br />
         Forensic-oriented data analysis project focused on identifying anomalous
-        borrower behavior and potential fraud indicators.<br>
+        borrower behaviour and potential fraud indicators.<br />
         <a href="https://github.com/ZarvinKucing/LoanRiskAnalytics" target="_blank">
           View on GitHub →
         </a>
