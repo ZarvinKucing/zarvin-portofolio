@@ -30,11 +30,12 @@
     h1 {
       font-size: 44px;
       margin: 0;
+      line-height: 1.2;
     }
 
     h2 {
       font-size: 26px;
-      margin-top: 70px;
+      margin-top: 64px;
       margin-bottom: 24px;
     }
 
@@ -42,6 +43,7 @@
       line-height: 1.7;
       max-width: 820px;
       margin-bottom: 18px;
+      font-size: 16px;
     }
 
     /* ================= HERO ================= */
@@ -68,18 +70,18 @@
       flex-shrink: 0;
     }
 
-     .photo-wrapper img {
+    .photo-wrapper img {
       width: 100%;
       height: 100%;
-      object-fit: cover;   
+      object-fit: cover;
       border-radius: 50%;
     }
-
 
     .hero p {
       font-size: 18px;
       margin-top: 16px;
       color: #333;
+      max-width: 520px;
     }
 
     /* ================= SKILLS ================= */
@@ -183,10 +185,44 @@
       text-decoration: none;
     }
 
+    /* ================= MOBILE ================= */
     @media (max-width: 768px) {
+      body {
+        padding: 16px;
+      }
+
+      .container {
+        padding: 28px 20px;
+        border-radius: 16px;
+      }
+
       .hero {
         flex-direction: column-reverse;
         text-align: center;
+        padding: 28px 20px;
+        gap: 20px;
+      }
+
+      .photo-wrapper {
+        width: 150px;
+        height: 150px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+        max-width: 100%;
+      }
+
+      .job {
+        flex-direction: column;
+      }
+
+      .job-year {
+        margin-top: 10px;
       }
     }
   </style>
@@ -200,8 +236,8 @@
       <div>
         <h1>Hi, I'm Zarvin 👋</h1>
         <p>
-          Digital Forensics & Data Analyst with a strong interest in
-          investigation-driven analysis and cybersecurity advisory.
+          Digital Forensics & Data Analyst focused on investigation-driven analysis
+          and risk-related use cases.
         </p>
       </div>
 
@@ -216,27 +252,18 @@
 
       <p>
         Final-year Computer Engineering undergraduate with experience in data analysis
-        and investigation-driven work across academic projects and applied internships.
-        I have been involved in analysing structured datasets to identify patterns,
-        irregularities, and support use cases related to risk assessment, revenue
-        assurance, and investigative analysis.
+        and system-oriented projects across academic work and applied internships.
       </p>
 
       <p>
-        My background combines technical problem-solving with an interest in
-        understanding how data supports decision-making in professional and
-        organisational contexts. In addition to data-focused work, I have experience
-        in system development and logic-based implementation through technical projects,
-        including scripting and system design in game development environments.
+        Exposure includes structured data analysis, system logic implementation,
+        and limited forensic-related analytical tasks supporting investigation
+        and revenue assurance use cases.
       </p>
 
       <p>
-        I am currently a final-year student with a flexible academic schedule and
-        availability for full-time internship or entry-level roles. I am particularly
-        interested in opportunities within digital forensics, data analysis, and
-        cybersecurity advisory, where analytical rigour, integrity, and clear
-        communication are essential. Based in Indonesia, I am open to on-site, hybrid,
-        or remote opportunities.
+        Background also includes scripting and system design in game development
+        environments, contributing to structured problem-solving and analytical thinking.
       </p>
     </section>
 
@@ -246,30 +273,26 @@
       <div class="skills">
         <span class="skill">Digital Forensics</span>
         <span class="skill">Investigation Support</span>
-        <span class="skill">Fraud & Risk Analysis</span> 
+        <span class="skill">Fraud & Risk Analysis</span>
         <span class="skill">Anomaly Detection</span>
-        <span class="skill">Data Cleansing</span>
         <span class="skill">Log & Transaction Analysis</span>
         <span class="skill">Evidence Documentation</span>
         <span class="skill">Data Visualization</span>
       </div>
 
-    <h2>Technical & Supporting Skills</h2>
-  <div class="skills">
-    <span class="skill">Python</span>
-    <span class="skill">SQL</span>
-    <span class="skill">VirtualBox</span>
-    <span class="skill">Log Analysis</span>
-    <span class="skill">Grafana</span>
-    <span class="skill">Tableau</span>
-    <span class="skill">Data Querying</span>
-    <span class="skill">Linux</span>
-    <span class="skill">Autopsy</span>
-    <span class="skill">FTK Imager</span>
-    <span class="skill">Figma</span>
-    <span class="skill">Lua</span>
-    
-  </div>
+      <h2>Technical & Supporting Skills</h2>
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Linux</span>
+        <span class="skill">VirtualBox</span>
+        <span class="skill">Autopsy</span>
+        <span class="skill">FTK Imager</span>
+        <span class="skill">Grafana</span>
+        <span class="skill">Tableau</span>
+        <span class="skill">Lua</span>
+        <span class="skill">Figma</span>
+      </div>
     </section>
 
     <!-- EDUCATION -->
@@ -288,7 +311,9 @@
             </a>
           </div>
           <div class="education-desc">
-          Bachelor’s student in Computer Engineering with academic experience in system-level engineering, data processing, and basic hardware and IoT projects, including limited exposure to investigation-related data analysis.
+            Academic focus on system-level engineering, data processing,
+            and basic hardware and IoT projects.
+          </div>
         </div>
       </div>
     </section>
@@ -298,18 +323,17 @@
       <h2>Professional Experience</h2>
 
       <div class="experience">
+
         <div class="job">
           <div>
             <div class="job-title">Data Forensic Intern</div>
             <div class="job-org">Telkom Indonesia</div>
             <div class="job-desc">
-              Supported forensic and revenue assurance–related analysis by examining
-              structured transactional and log-based datasets. Assisted investigation
-              use cases through data validation, anomaly identification, and clear
-              documentation of findings.
+              Supported forensic and revenue assurance analysis through
+              structured transactional and log-based data examination.
             </div>
           </div>
-          <div class="job-year">June - August 2025</div>
+          <div class="job-year">Jun – Aug 2025</div>
         </div>
 
         <div class="job">
@@ -317,12 +341,11 @@
             <div class="job-title">Data Analyst Intern</div>
             <div class="job-org">Telkom Indonesia</div>
             <div class="job-desc">
-              Assisted analytical work on large-scale datasets by performing data
-              querying, identifying patterns, and supporting insight generation for
-              operational and risk-related use cases.
+              Assisted data querying, pattern identification,
+              and analytical support for operational use cases.
             </div>
           </div>
-          <div class="job-year">June - August 2025</div>
+          <div class="job-year">Jun – Aug 2025</div>
         </div>
 
         <div class="job">
@@ -330,13 +353,13 @@
             <div class="job-title">Roblox Developer</div>
             <div class="job-org">Game Development (Project-Based)</div>
             <div class="job-desc">
-              Developed and tested Lua-based game systems, validating gameplay logic,
-              scripting behaviour, and system stability through structured testing and
-              iteration.
+              Developed and tested Lua-based systems,
+              validating logic and gameplay behaviour.
             </div>
           </div>
           <div class="job-year">2023 – 2024</div>
         </div>
+
       </div>
     </section>
 
@@ -345,8 +368,8 @@
       <h2>Projects</h2>
       <p>
         <strong>Loan Risk Analytics</strong><br />
-        Forensic-oriented data analysis project focused on identifying anomalous
-        borrower behaviour and potential fraud indicators.<br />
+        Investigation-oriented data analysis project focused on
+        identifying anomalous borrower behaviour.<br />
         <a href="https://github.com/ZarvinKucing/LoanRiskAnalytics" target="_blank">
           View on GitHub →
         </a>
